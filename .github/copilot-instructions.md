@@ -16,12 +16,12 @@ Before making changes in any repo:
 - When working across repos, **apply the standards of the target repo** (not this one).
 
 If there is a conflict:
-1. The current repository’s local docs/config (especially `contributing/`)
+1. The current repository's local docs/config (especially `contributing/`)
 2. These Copilot instructions
 3. General best practices
 
 ## 2) Where things live (cross-repo map)
-When asked to add or update content, put it in the repo that “owns” it:
+When asked to add or update content, put it in the repo that "owns" it:
 
 - **Language design / semantics / syntax**
     - Repo: https://github.com/zane-lang/spec
@@ -44,7 +44,7 @@ When asked to add or update content, put it in the repo that “owns” it:
 
 ### 3.2 Exceptions (files where tabs are wrong or dangerous)
 - **Documentation (Markdown, etc.)**: use **four spaces** when indentation is required for correct rendering on GitHub.
-    - Prefer fenced code blocks (```), and within fenced code blocks continue indenting with **four spaces**
+    - Prefer fenced code blocks (` ``` `), and within fenced code blocks continue indenting with **four spaces**
 - **YAML** (`.yml`, `.yaml`): do **not** use tabs for indentation (use spaces).
 - **Markdown lists** can be sensitive; keep existing indentation style if the renderer/layout matters.
 - In any file with an established style, **match the local style**.
@@ -54,8 +54,37 @@ When asked to add or update content, put it in the repo that “owns” it:
 - End files with a single newline (`\n`).
 - Prefer LF line endings.
 
-## 4) “Defaults you can edit” (maintainer knobs)
-Edit this section to match the org’s preferences; Copilot should follow it once set.
+## 4) How to work: thoroughness over brevity
+**Do not optimize for token count or response length. Optimize for correctness on the first attempt.**
+
+The cost model here is: one wrong answer + one correction = two requests, which costs more than one long, thorough answer. Therefore:
+- **Write more, correct less.** A longer, more careful response is always preferable to a shorter one that requires a follow-up.
+- **Do not skip steps for brevity.** Read all relevant files, cross-check all constraints, run through the full checklist — even if it feels redundant.
+- **Do not summarize away detail.** If something is worth checking, show that you checked it.
+
+### 4.1 Before starting work: gather all unknowns upfront
+If at any point before or during a task you notice that you are missing information needed to complete it correctly:
+- **Stop. Do not guess or proceed with assumptions.**
+- Look ahead and identify **every** piece of information you might need — not just the immediate blocker, but anything you could foresee needing later in the same task.
+- Collect all of those unknowns into a single, clearly structured list.
+- **Abort the task and present that list to the user in one message**, so they can answer everything in a single follow-up request.
+
+This avoids a chain of back-and-forth requests where each answer reveals a new question. One well-structured "I need these things before I can proceed" message is far better than three sequential single-question messages.
+
+### 4.2 After completing work: always self-review before responding
+After finishing any edit, generation, or plan, run through this checklist before presenting the result. Do not skip steps.
+
+- [ ] **Correctness**: Does the output match what was asked? Re-read the original request and verify each requirement is met.
+- [ ] **Standards**: Did I check `contributing/` and other local guidance for the target repo? Are formatting, naming, and style conventions followed?
+- [ ] **Spec compliance** (if language behavior is involved): Have I consulted the spec repo rather than guessing?
+- [ ] **Whitespace**: Are tab/space rules applied correctly? No trailing whitespace? LF endings?
+- [ ] **Cross-repo integrity**: If multiple repos are affected, is each change in the right repo?
+- [ ] **Side effects**: Does this change break or contradict anything else in the repo (CI, docs, templates, other config)?
+- [ ] **Completeness**: Is there anything the user would immediately notice is missing?
+
+If any item fails, **fix it before responding** — do not surface a known issue and leave it for the user to catch.
+
+## 5) Writing style
 
 - Preferred indentation:
     - Code: tabs
