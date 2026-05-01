@@ -1,4 +1,4 @@
-# GitHub Copilot Instructions — zane-lang/.github
+# GitHub Copilot Instructions
 
 This repository is the **organization meta repo** for the Zane language GitHub org (templates, policy docs, shared workflows, etc.).
 
