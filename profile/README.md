@@ -8,16 +8,6 @@ compiler should keep the intent you wrote down, and turn strictness into
 performance instead of ceremony. It gives you deterministic,
 garbage‑collection‑free memory management without giving up safety.
 
-```zane
-Greet := (name: Str) {
-    print("Hello, \(name)!")
-}
-
-main := {
-    Greet("world")
-}
-```
-
 ---
 
 ## Why Zane?
