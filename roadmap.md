@@ -1,0 +1,6 @@
+- [x] spec
+- [x] coda
+- [ ] compiler
+	- [ ] cst
+	- [ ] typed ast
+	- [ ] code emition
