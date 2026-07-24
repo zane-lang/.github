@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Question or discussion
+    url: https://github.com/zane-lang/spec/discussions
+    about: Ask questions and discuss ideas about the Zane language and its ecosystem.
+  - name: Documentation
+    url: https://github.com/zane-lang/docs
+    about: Read the documentation before filing an issue.
+  - name: Report a security vulnerability
+    url: https://github.com/zane-lang/.github/blob/main/SECURITY.md
+    about: Please report security issues privately, not as public issues.
