@@ -31,8 +31,7 @@ Legend: `[x]` done · `[~]` in progress · `[ ]` planned
 
 - [~] **Editor & language support**
   - [x] Tree-sitter grammar for Coda — [`tree-sitter-coda`](https://github.com/zane-lang/tree-sitter-coda)
-  - [~] Language server (Sherlock) — `sherlock`
-  - [~] Parser (Taiga) — `taiga`
+  - [~] LSP
 - [~] **Developer tooling**
   - [~] `checkpoint` CLI utility — [`checkpoint`](https://github.com/zane-lang/checkpoint)
 - [~] **Project presence**
