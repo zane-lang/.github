@@ -1,11 +1,12 @@
+<!-- markdownlint-disable-next-line MD041 -- logo floats before the H1 by design -->
 <img height="96" align="right" src="https://raw.githubusercontent.com/zane-lang/logos/main/zane/zane.svg" alt="Zane logo" />
 
 # Zane
 
 **Zane** is a systems programming language built around a simple idea: the
 compiler should keep the intent you wrote down, and turn strictness into
-performance instead of ceremony. It gives you deterministic, garbage‑collection
-‑free memory management without giving up safety.
+performance instead of ceremony. It gives you deterministic,
+garbage‑collection‑free memory management without giving up safety.
 
 ```zane
 Greet := (name: Str) {

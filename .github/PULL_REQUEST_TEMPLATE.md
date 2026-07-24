@@ -3,6 +3,7 @@ Thanks for contributing to Zane! Please fill in the sections below.
 See CONTRIBUTING.md for guidelines.
 -->
 
+<!-- markdownlint-disable-next-line MD041 -- template body starts at H2 by design -->
 ## Summary
 
 <!-- What does this pull request change, and why? -->

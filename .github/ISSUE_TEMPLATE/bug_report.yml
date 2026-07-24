@@ -50,11 +50,18 @@ body:
       placeholder: "e.g. Linux x86_64"
     validations:
       required: false
+  - type: markdown
+    attributes:
+      value: |
+        ⚠️ **Do not** include secrets, credentials, tokens, personal data, or
+        security-vulnerability details in this public issue. Redact them first,
+        and report security issues privately — see
+        [SECURITY.md](https://github.com/zane-lang/.github/blob/main/SECURITY.md).
   - type: textarea
     id: logs
     attributes:
       label: Relevant logs or output
-      description: Paste any error messages or logs. This is automatically formatted as code.
+      description: Paste any error messages or logs. This is automatically formatted as code. Redact any secrets or personal data first.
       render: shell
     validations:
       required: false
