@@ -24,27 +24,6 @@ garbage‑collection‑free memory management without giving up safety.
 
 ---
 
-## Getting started
-
-The compiler is developed inside a reproducible [devbox](https://www.jetify.com/devbox)
-environment. To build it from source:
-
-```sh
-# Install devbox (once)
-curl -fsSL https://get.jetify.com/devbox | bash
-
-# Clone and build
-git clone https://github.com/zane-lang/compiler
-cd compiler
-devbox shell
-just init   # submodules, vcpkg dependencies, and meson
-just build
-```
-
-Run `just` inside the dev shell to see every available command.
-
----
-
 ## Get involved
 
 Zane is an open project and contributions are welcome — issues, pull requests,
