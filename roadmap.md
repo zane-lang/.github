@@ -25,7 +25,13 @@ Legend: `[x]` done · `[~]` in progress · `[ ]` planned
   - [ ] Typed AST
   - [ ] Code emission
   - [ ] Diagnostics & error reporting
-  - [ ] Standard library (`core`)
+
+## Standard packages
+
+Packages provided by Zane itself.
+
+- [ ] `core` — the minimal core package
+- [ ] `std` — the standard library
 
 ## Tooling & ecosystem
 
