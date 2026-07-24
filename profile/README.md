@@ -10,29 +10,6 @@ garbage‑collection‑free memory management without giving up safety.
 
 ---
 
-## Why Zane?
-
-- **Deterministic memory, no GC.** A memory model of *hosts*, *guests*,
-  *anchors*, and *arena* layout with lexical lifetimes and deterministic
-  destruction — you always know when and where things are freed.
-- **Casing determines kind.** Identifier casing signals what a name *is* (a
-  type, a value, …), so code reads unambiguously without extra annotations.
-- **Effects, inferred.** Mutation effects are inferred rather than hand‑written,
-  keeping signatures honest without the boilerplate.
-- **Safe concurrency.** Implicit parallelism via `spawn`, made safe by
-  *water‑tower lifetimes*.
-- **Error handling without wrappers.** Bifurcated return paths and `?` handlers
-  instead of threading `Result` types through every call.
-- **Staged compilation & fixed layout.** Predictable, inspectable stages and
-  data layouts you can reason about.
-
-The full rationale — foundations, type system, runtime model, and program
-structure — lives in the [specification](https://github.com/zane-lang/spec),
-where each normative document is paired with a design story explaining the
-reasoning behind it.
-
----
-
 ## The ecosystem
 
 | Repository | What it is |
