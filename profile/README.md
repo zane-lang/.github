@@ -10,6 +10,14 @@ garbage‑collection‑free memory management without giving up safety.
 
 ---
 
+## Design philosophy
+
+Zane gives inherited language design no special authority. **Existing languages are things to investigate, not templates to follow.** Every feature and restriction is expected to earn its place from first principles rather than from convention.
+
+That also means making deliberately strong claims. Strong claims are easy to falsify; when one breaks, the counterexample exposes a requirement the design was missing. Zane's own decisions are subject to the same treatment — nothing is preserved merely because we already designed it that way.
+
+The longer reasoning, including the bets that survived and the ones that did not, lives in the [specification's design stories](https://github.com/zane-lang/spec/tree/main/stories).
+
 ## The ecosystem
 
 | Repository | What it is |
