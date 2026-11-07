@@ -4,9 +4,8 @@ Need help with Zane? Here's where to look.
 
 ## Documentation
 
+- **Installing and using Zane** — [zane-lang/zane](https://github.com/zane-lang/zane)
 - **Language specification** — [zane-lang/spec](https://github.com/zane-lang/spec)
-- **Documentation** — [zane-lang/docs](https://github.com/zane-lang/docs)
-- **Website** — [zane-lang/website](https://github.com/zane-lang/website)
 - **Coda configuration format** — [zane-lang/coda](https://github.com/zane-lang/coda)
 
 ## Questions and discussion
