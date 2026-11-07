@@ -5,10 +5,35 @@
 
 **Zane** is a systems programming language built around a simple idea: the
 compiler should keep the intent you wrote down, and turn strictness into
-performance instead of ceremony. It gives you deterministic,
-garbage‑collection‑free memory management without giving up safety.
+performance instead of ceremony. It gives you deterministic memory management
+with no garbage collector and no lifetime annotations, without giving up
+safety.
 
----
+```zane
+package hello;
+
+import core$;
+
+Unit main() {
+	console Console(@program$console);
+	console!print("Hello, Zane!");
+	return Unit();
+}
+```
+
+Zane is young and changes quickly. Its compiler works and is released, but
+there is no tutorial yet: the [specification](https://github.com/zane-lang/spec)
+is the reference.
+
+## Start here
+
+1. **Try it**: install the [`zane`](https://github.com/zane-lang/zane) command
+   and follow its first-project steps.
+2. **Learn the ideas**: read the spec's
+   [`foundations.md`](https://github.com/zane-lang/spec/blob/main/spec/foundations.md),
+   then the reading order in the [spec README](https://github.com/zane-lang/spec#where-to-start).
+3. **See real code**: the [`core` package](https://github.com/zane-lang/core)
+   and its tests are written in Zane.
 
 ## Design philosophy
 
@@ -18,19 +43,21 @@ That also means making deliberately strong claims. Strong claims are easy to fal
 
 The longer reasoning, including the bets that survived and the ones that did not, lives in the [specification's design stories](https://github.com/zane-lang/spec/tree/main/stories).
 
-## The ecosystem
+## Repositories
 
 | Repository | What it is |
 | --- | --- |
+| [**zane**](https://github.com/zane-lang/zane) | The `zane` command: create, build, run and test projects. Start here. |
 | [**spec**](https://github.com/zane-lang/spec) | The language specification and its design stories. |
-| [**compiler**](https://github.com/zane-lang/compiler) | The Zane compiler and command‑line interface. |
-| [**coda**](https://github.com/zane-lang/coda) | The Coda configuration format for Zane — a compact, readable alternative to JSON. |
+| [**compiler**](https://github.com/zane-lang/compiler) | `zanec`, the compiler that `zane` runs. |
+| [**core**](https://github.com/zane-lang/core) | The `core` and `math` packages: numbers, text, lists and control flow. |
+| [**zane-nvim**](https://github.com/zane-lang/zane-nvim) | Neovim support for Zane. |
+| [**coda**](https://github.com/zane-lang/coda) | Coda, the configuration format of Zane's project files. |
 | [**tree-sitter-coda**](https://github.com/zane-lang/tree-sitter-coda) | A Tree‑sitter grammar for Coda. |
-| [**website**](https://github.com/zane-lang/website) | The Zane website. |
-| [**docs**](https://github.com/zane-lang/docs) | Documentation for the language and tooling. |
-| [**logos**](https://github.com/zane-lang/logos) | The official Zane logos and brand assets. |
+| [**logos**](https://github.com/zane-lang/logos) | The Zane and Coda logos. |
 
----
+The `website`, `docs`, `template`, `test-package`, `checkpoint` and
+`coderabbit` repositories are not needed to learn or use Zane right now.
 
 ## Get involved
 
