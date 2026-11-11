@@ -10,26 +10,19 @@ body:
         proposals, consider opening a discussion first so we can shape the idea
         together.
   - type: textarea
-    id: problem
+    id: description
     attributes:
-      label: What problem does this solve?
-      description: Describe the motivation. What are you trying to do, and what gets in the way today?
-    validations:
-      required: true
-  - type: textarea
-    id: proposal
-    attributes:
-      label: Proposed solution
+      label: Feature description
       description: Describe what you'd like to happen.
     validations:
       required: true
   - type: textarea
-    id: alternatives
+    id: motivation
     attributes:
-      label: Alternatives considered
-      description: Any alternative approaches or workarounds you've thought about.
+      label: Motivation behind it
+      description: What's the motivation behind it?
     validations:
-      required: false
+      required: true
   - type: textarea
     id: context
     attributes:
