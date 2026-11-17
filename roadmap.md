@@ -52,9 +52,8 @@ Legend: `[x]` done · `[~]` in progress · `[ ]` planned · `[-]` paused
 
 Packages provided by Zane itself.
 
-- [x] `core` — basic types, text, containers, control flow, console — [`core`](https://github.com/zane-lang/core)
-- [x] `math` — math functions over `core`'s numbers — [`core`](https://github.com/zane-lang/core)
-- [ ] `std` — the standard library
+- [x] `core` — basic types, text, containers, control flow, console — [`std`](https://github.com/zane-lang/std)
+- [x] `math` — math functions over `core`'s numbers — [`std`](https://github.com/zane-lang/std)
 
 ## Tooling & ecosystem
 
