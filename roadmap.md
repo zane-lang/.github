@@ -54,6 +54,7 @@ Packages provided by Zane itself.
 
 - [x] `core` — basic types, text, containers, control flow, console — [`std`](https://github.com/zane-lang/std)
 - [x] `math` — math functions over `core`'s numbers — [`std`](https://github.com/zane-lang/std)
+- [ ] `regex` — regular expressions — [`std`](https://github.com/zane-lang/std)
 
 ## Tooling & ecosystem
 
