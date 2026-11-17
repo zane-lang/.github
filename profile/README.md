@@ -32,7 +32,7 @@ is the reference.
 2. **Learn the ideas**: read the spec's
    [`foundations.md`](https://github.com/zane-lang/spec/blob/main/spec/foundations.md),
    then the reading order in the [spec README](https://github.com/zane-lang/spec#where-to-start).
-3. **See real code**: the [`core` package](https://github.com/zane-lang/core)
+3. **See real code**: the [`core` package](https://github.com/zane-lang/std/tree/main/lib/core)
    and its tests are written in Zane.
 
 ## Design philosophy
@@ -50,7 +50,7 @@ The longer reasoning, including the bets that survived and the ones that did not
 | [**zane**](https://github.com/zane-lang/zane) | The `zane` command: create, build, run and test projects. Start here. |
 | [**spec**](https://github.com/zane-lang/spec) | The language specification and its design stories. |
 | [**compiler**](https://github.com/zane-lang/compiler) | `zanec`, the compiler that `zane` runs. |
-| [**core**](https://github.com/zane-lang/core) | The `core` and `math` packages: numbers, text, lists and control flow. |
+| [**std**](https://github.com/zane-lang/std) | The standard library: the `core`, `math` and `regex` packages (numbers, text, lists, control flow, regular expressions). |
 | [**zane-nvim**](https://github.com/zane-lang/zane-nvim) | Neovim support for Zane. |
 | [**coda**](https://github.com/zane-lang/coda) | Coda, the configuration format of Zane's project files. |
 | [**tree-sitter-coda**](https://github.com/zane-lang/tree-sitter-coda) | A Tree‑sitter grammar for Coda. |
